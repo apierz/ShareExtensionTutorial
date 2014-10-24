@@ -37,6 +37,9 @@
         NSLog(@"%@", [dictionary objectForKey:@"WHICH_OPTION"]);
     }
     
+    //This deletes the array once it is added, so it will not be added again 
+     [mySharedDefaults removeObjectForKey:@"THINGS_TO_ADD"];
+    
     
 }
 
