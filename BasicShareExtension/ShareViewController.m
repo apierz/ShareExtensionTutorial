@@ -159,22 +159,6 @@
     return @[self.item];
 }
 
--(void)saveToDefaults {
-    //stores the dictionary in an array in our shared NSUserDefalts
-    if (![mySharedDefaults objectForKey:@"THINGS_TO_ADD"]) {
-        self.thingsToAdd = [[NSMutableArray alloc]init];
-    }
-    
-    else {
-        self.thingsToAdd = [mySharedDefaults objectForKey:@"THINGS_TO_ADD"];
-    }
-    
-    [self.thingsToAdd addObject:objectToAdd];
-    
-    [mySharedDefaults setObject:self.thingsToAdd forKey:@"THINGS_TO_ADD"];
-    
-    [mySharedDefaults synchronize];
-    
-}
+
 
 @end
