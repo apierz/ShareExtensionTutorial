@@ -93,6 +93,7 @@
         
     }
     
+    //***Image***
     if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypeImage]) {
         NSLog(@"INSIDE IF");
         [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypeURL options:nil completionHandler: ^(NSData * data, NSError *error) {
