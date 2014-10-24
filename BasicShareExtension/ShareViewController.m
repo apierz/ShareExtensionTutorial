@@ -13,7 +13,6 @@
 @property  SLComposeSheetConfigurationItem * item;
 @property (strong, nonatomic) NSArray * array;
 @property (strong, nonatomic) NSMutableArray * thingsToAdd;
-@property (strong, nonatomic) NSUserDefaults * mySharedDefaults;
 
 @end
 
